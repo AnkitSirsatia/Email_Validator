@@ -107,7 +107,7 @@ Libraries
 You can now import the validator:
 
 ```java
-import com.Ankit.email_validator;
+import com.Ankit.EmailValidator;
 ```
 
 ---
@@ -117,7 +117,7 @@ import com.Ankit.email_validator;
 Example:
 
 ```java
-import com.Ankit.email_validator;
+import com.Ankit.EmailValidator;
 
 public class Main {
 
@@ -125,7 +125,7 @@ public class Main {
 
         String email = "example@gmail.com";
 
-        boolean result = email_validator.emailValidator(email);
+        boolean result = EmailValidator.emailValidator(email);
 
         System.out.println(result);
     }
@@ -145,7 +145,7 @@ true
 ### Valid Email
 
 ```java
-email_validator.emailValidator("example@gmail.com");
+EmailValidator.emailValidator("example@gmail.com");
 ```
 
 Returns:
@@ -157,7 +157,7 @@ true
 ### Invalid Special Character
 
 ```java
-email_validator.emailValidator("example!@gmail.com");
+EmailValidator.emailValidator("example!@gmail.com");
 ```
 
 Returns:
@@ -169,7 +169,7 @@ false
 ### Double `@`
 
 ```java
-email_validator.emailValidator("example@@gmail.com");
+EmailValidator.emailValidator("example@@gmail.com");
 ```
 
 Returns:
@@ -181,7 +181,7 @@ false
 ### Consecutive Dots
 
 ```java
-email_validator.emailValidator("example..test@gmail.com");
+EmailValidator.emailValidator("example..test@gmail.com");
 ```
 
 Returns:
@@ -193,7 +193,7 @@ false
 ### Invalid `.@`
 
 ```java
-email_validator.emailValidator("example.@gmail.com");
+EmailValidator.emailValidator("example.@gmail.com");
 ```
 
 Returns:
@@ -205,7 +205,7 @@ false
 ### Invalid `@.`
 
 ```java
-email_validator.emailValidator("example@gmail.com.");
+EmailValidator.emailValidator("example@gmail.com.");
 ```
 
 Returns:
@@ -281,9 +281,9 @@ Email-Validator/
 ├── src/
 │   └── com/
 │       └── Ankit/
-│           └── email_validator.java
+│           └── EmailValidator.java
 │
-├── email-validator.jar
+├── Email-Validator.jar
 │
 └── README.md
 ```
