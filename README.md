@@ -44,6 +44,8 @@ a-z
 0-9
 @
 .
+-
+_
 ```
 
 ### 2. MX Record Validation
