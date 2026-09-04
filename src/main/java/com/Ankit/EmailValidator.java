@@ -13,11 +13,11 @@ public class EmailValidator {
     }
 
     public static boolean emailValidator(String email){
-        if(email.contains("@@") || email.matches(".*[^a-zA-Z0-9@.].*") || email.contains("..") || email.contains(".@")
+        if(email.contains("@@") || email.matches(".*[^a-zA-Z0-9@._-].*") || email.contains("..") || email.contains(".@")
                 || email.contains("@.")){
             return false;
         }else {
-            if( email.matches("[a-zA-Z0-9@.]+") && email.contains("@"))
+            if( email.matches("[a-zA-Z0-9._+\\-]+@[a-zA-Z0-9.-]+") && email.contains("@"))
             {
                 int atIndex = email.indexOf("@");
                 String domain = email.substring(atIndex + 1);
