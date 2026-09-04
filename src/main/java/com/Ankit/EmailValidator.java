@@ -4,7 +4,7 @@ import javax.naming.directory.Attributes;
 import javax.naming.directory.InitialDirContext;
 
 
-public class email_validator {
+public class EmailValidator {
 
     public static boolean MXLookup( String domain) throws NamingException{
         InitialDirContext context = new InitialDirContext();
